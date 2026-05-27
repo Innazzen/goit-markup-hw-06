@@ -1,0 +1,130 @@
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer .logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 18px;
+  color: #f4f4fd;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+}
+
+.left .features-text {
+  color: #f4f4fd;
+  width: 264px;
+  margin-top: 16px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.container-footer {
+  display: flex;
+}
+
+.left {
+  
+  margin-right: 120px;
+}
+.icon {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer .icon:hover,
+.footer .icon:focus {
+  background-color: #31d0aa;
+}
+
+.footer-socials .features-text {
+  color: #f4f4fd;
+}
+
+.footer-social-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+
+  margin-bottom: 16px;
+}
+
+.footer-icon-svg {
+  fill: #f4f4fd;
+  display: block;
+  display: inline-flex;
+}
+.footer-email {
+  margin-left: 83px;
+}
+
+.input-wrapper-footer {
+  margin-top: 16px;
+  display: flex;
+}
+
+.footer-email-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.footer-input-text {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  width: 264px;
+  height: 40px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input-text::placeholder {
+  color: #ffffff;
+}
+
+.footer-input-text:focus,
+.footer-input-text:hover {
+  border: solid 1px #31d0aa;
+  outline: none;
+}
+
+.subscribe-button {
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  padding: 8px 24px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  height: 40px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-left: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-button:focus,
+.subscribe-button:hover {
+  background-color: #31d0aa;
+  outline: none;
+}
