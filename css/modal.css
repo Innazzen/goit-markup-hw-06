@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
+  padding: 16px;
   top: 0;
   left: 0;
   width: 100%;
@@ -259,4 +261,20 @@
 }
 .comment-wrapper {
   margin-bottom: 16px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+  .modal {
+    max-width: 288px;
+    min-height: 623px;
+    padding: 72px 16px 24px;
+  }
+
+  .policy-label {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
 }

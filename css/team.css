@@ -42,10 +42,12 @@
 
 .ul-item-team {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
   margin: 0;
   padding: 0;
   margin-top: 72px;
+  align-items: center;
 }
 
 .team-card-content {
@@ -78,4 +80,24 @@
   justify-content: center;
   gap: 24px;
   fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+
+  .ul-item-team {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .li-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+
+  .li-item {
+    flex-basis: calc((100% - 72px) / 4);
+  }
 }
