@@ -26,7 +26,6 @@
 
 .nav-active-link {
   color: #404bbf;
- 
 }
 .nav-active-link::after {
   content: "";
@@ -45,7 +44,7 @@
 }
 
 .contacts-link {
-   color: #434455;
+  color: #434455;
 
   text-decoration: none;
 
@@ -81,8 +80,6 @@
   text-decoration: none;
   line-height: 1.33;
   letter-spacing: 0.03em;
- 
-
 }
 
 .logo {
@@ -101,18 +98,15 @@
   color: #2e2f42;
 }
 
-
 .header-container {
   display: flex;
-  align-items: center
+  align-items: center;
   justify-content: space-between;
 }
 
 .header .nav {
   flex-grow: 1;
 }
-
-
 
 .burger-btn {
   display: flex;
@@ -128,8 +122,6 @@
 
   cursor: pointer;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .burger-btn {
