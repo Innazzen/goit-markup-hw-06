@@ -1,37 +1,56 @@
 .hero {
   background-color: #2e2f42;
-  border: #e7e9fc;
-  padding: 188px 141px;
-  max-width: 320px;
+
+  padding-top: 72px;
+  padding-bottom: 72px;
+
   min-height: 432px;
+
   background-image:
     linear-gradient(
-      180deg,
-      rgba(46, 47, 66, 0.7) 0%,
-      rgba(46, 47, 66, 0.7) 100%
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
     ),
     image-set(
       url("../images/hero-bg-m.jpg") 1x,
       url("../images/hero-bg-m@2x.jpg") 2x
     );
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   max-width: 1440px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+   padding-top: 112px;
+    padding-bottom: 112px;
+
     min-height: 436px;
+
     background-image:
       linear-gradient(
-        180deg,
-        rgba(46, 47, 66, 0.7) 0%,
-        rgba(46, 47, 66, 0.7) 100%
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-bg-t.jpg");
+      
+      image-set(
+        url("../images/hero-bg-t.jpg") 1x,
+        url("../images/hero-bg-t@2x.jpg") 2x
+      );
+      
+       .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+
+    max-width: 496px;
+
+    margin-bottom: 36px;
+  }
+      
   }
 
   @media (min-resolution: 192dpi) {
@@ -49,27 +68,20 @@
 
 @media screen and (min-width: 1158px) {
   .hero {
-    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+
     min-height: 600px;
+
     background-image:
       linear-gradient(
-        180deg,
-        rgba(46, 47, 66, 0.7) 0%,
-        rgba(46, 47, 66, 0.7) 100%
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
       ),
-      url("../images/hero-bg.jpg");
-  }
-
-  @media (min-resolution: 192dpi) {
-    .hero {
-      background-image:
-        linear-gradient(
-          180deg,
-          rgba(46, 47, 66, 0.7) 0%,
-          rgba(46, 47, 66, 0.7) 100%
-        ),
-        url("../images/hero-bg@2x.jpg");
-    }
+      image-set(
+        url("../images/hero-bg.jpg") 1x,
+        url("../images/hero-bg@2x.jpg") 2x
+      );
   }
 }
 
@@ -83,15 +95,16 @@
 
 .hero-title {
   color: #ffffff;
+
   font-weight: 700;
-  font-family: "Roboto";
-  font-size: 56px;
-  text-align: center;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
-  margin: 0;
-  max-width: 496px;
-  margin: 0 0 48px 0;
+  text-align: center;
+
+  max-width: 216px;
+
+  margin: 0 auto 72px;
 }
 .button {
   background-color: #4d5ae5;

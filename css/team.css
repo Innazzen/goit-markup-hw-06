@@ -1,11 +1,10 @@
 .team {
   background-color: #f4f4fd;
-  padding: 120px 141px;
+   padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-.team-container {
-  padding: 0;
-}
+
 
 .team-title2 {
   color: #2e2f42;
@@ -38,6 +37,8 @@
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+     max-width: 264px;
+  width: 100%;
 }
 
 .ul-item-team {
@@ -87,7 +88,10 @@
   .ul-item-team {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    row-gap: 64px;
+    column-gap: 24px;
+
+    justify-content: center;
   }
 
   .li-item {
@@ -96,8 +100,14 @@
 }
 
 @media screen and (min-width: 1158px) {
-
+ .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   .li-item {
     flex-basis: calc((100% - 72px) / 4);
+  }
+    .ul-item-team {
+    row-gap: 0;
   }
 }
