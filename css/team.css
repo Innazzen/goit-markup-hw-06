@@ -92,10 +92,15 @@
     column-gap: 24px;
 
     justify-content: center;
+    align-items: stretch;
+    max-width: 552px; 
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .li-item {
     flex-basis: calc((100% - 24px) / 2);
+    max-width: 264px;
   }
 }
 
@@ -104,10 +109,13 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
+   .ul-item-team {
+    row-gap: 0; 
+  max-width: none;}
+
   .li-item {
     flex-basis: calc((100% - 72px) / 4);
+    max-width: 264px;
   }
-    .ul-item-team {
-    row-gap: 0;
+   
   }
-}
